@@ -136,53 +136,53 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 
-// // page navigation variables
-// const navigationLinks = document.querySelectorAll("[data-nav-link]");
-// const pages = document.querySelectorAll("[data-page]");
+// page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
 
-// // add event to all nav link
-// for (let i = 0; i < navigationLinks.length; i++) {
-//   navigationLinks[i].addEventListener("click", function () {
+// add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
 
-//     for (let i = 0; i < pages.length; i++) {
-//       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-//         pages[i].classList.add("active");
-//         navigationLinks[i].classList.add("active");
-//         window.scrollTo(0, 0);
-//       } else {
-//         pages[i].classList.remove("active");
-//         navigationLinks[i].classList.remove("active");
-//       }
-//     }
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
 
+  });
+}
+
+// // Wait until the DOM is fully loaded
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Get the About button and add a click event listener
+//   var aboutButton = document.querySelector('[data-nav-link="About"]');
+//   aboutButton.addEventListener('click', function() {
+//     // Hide all articles
+//     var articles = document.querySelectorAll('article');
+//     articles.forEach(function(article) {
+//       article.classList.remove('active');
+//     });
+//     // Show the About article
+//     var aboutArticle = document.querySelector('.about');
+//     aboutArticle.classList.add('active');
 //   });
-// }
 
-// Wait until the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-  // Get the About button and add a click event listener
-  var aboutButton = document.querySelector('[data-nav-link="About"]');
-  aboutButton.addEventListener('click', function() {
-    // Hide all articles
-    var articles = document.querySelectorAll('article');
-    articles.forEach(function(article) {
-      article.classList.remove('active');
-    });
-    // Show the About article
-    var aboutArticle = document.querySelector('.about');
-    aboutArticle.classList.add('active');
-  });
-
-  // Get the Resume button and add a click event listener
-  var resumeButton = document.querySelector('[data-nav-link="Resume"]');
-  resumeButton.addEventListener('click', function() {
-    // Hide all articles
-    var articles = document.querySelectorAll('article');
-    articles.forEach(function(article) {
-      article.classList.remove('active');
-    });
-    // Show the Resume article
-    var resumeArticle = document.querySelector('.resume');
-    resumeArticle.classList.add('active');
-  });
-});
+//   // Get the Resume button and add a click event listener
+//   var resumeButton = document.querySelector('[data-nav-link="Resume"]');
+//   resumeButton.addEventListener('click', function() {
+//     // Hide all articles
+//     var articles = document.querySelectorAll('article');
+//     articles.forEach(function(article) {
+//       article.classList.remove('active');
+//     });
+//     // Show the Resume article
+//     var resumeArticle = document.querySelector('.resume');
+//     resumeArticle.classList.add('active');
+//   });
+// });
