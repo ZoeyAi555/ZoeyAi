@@ -155,7 +155,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--light-gray); }
 
 
 
@@ -749,7 +749,7 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: auto;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
