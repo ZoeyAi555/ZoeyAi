@@ -155,7 +155,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--light-gray); }
+body { background: var(--smoky-black); }
 
 
 
@@ -726,7 +726,7 @@ main {
  * #clients 
  */
 
-.clients { margin-bottom: 15px; }
+.clients { margin-bottom: 20px; }
 
 .clients-list {
   display: flex;
@@ -744,7 +744,7 @@ main {
 }
 
 .clients-item {
-  min-width: auto;
+  min-width: 50%;
   scroll-snap-align: start;
 }
 
